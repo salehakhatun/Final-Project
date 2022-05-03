@@ -54,3 +54,4 @@ LGA locality data from https://discover.data.vic.gov.au/dataset/victorian-electo
 04. Saleha K
 05. Kumudi M
 06. Phimnarin
+- [Power_Point_Presentation](https://docs.google.com/presentation/d/10QqLe6cVk36krEt7sko1TTdsS9jA7ldJLU9eKnF7EZM/edit#slide=id.g12742dce94f_3_133/)
