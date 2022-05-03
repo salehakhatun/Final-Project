@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Vic Property Analysis  - Landing Page</title>
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet" /> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3"  href="/">Vic Property Analysis <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggles" viewBox="0 0 16 16">
+                <path d="M4.5 9a3.5 3.5 0 1 0 0 7h7a3.5 3.5 0 1 0 0-7h-7zm7 6a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm-7-14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm2.45 0A3.49 3.49 0 0 1 8 3.5 3.49 3.49 0 0 1 6.95 6h4.55a2.5 2.5 0 0 0 0-5H6.95zM4.5 0h7a3.5 3.5 0 1 1 0 7h-7a3.5 3.5 0 1 1 0-7z"/>
+              </svg></a>
+            
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                   
+
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Data & Analysis</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePlots" aria-expanded="false" aria-controls="collapsePlots">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>   
+                            Plots 
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a>
+                            <div class="collapse" id="collapsePlots" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                <!-- <a class="nav-link" href="Plot_1.html">Max Temp</a>  -->
+                                <a class="nav-link" href="/">Matplotlib</a>    
+                                <a class="nav-link" href="Plot_3.html">Property Dashboard</a>
+                                <!-- <a class="nav-link" href="Plot_4.html">Wind Speed</a>  -->
+                                </nav>
+                                </div>
+
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseComparison" aria-expanded="false" aria-controls="collapseComparison">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-eye"></i></div>   
+                                    Property prediction
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a>
+                                    <div class="collapse" id="collapseComparison" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="Comparison_1.html">Vic Housing Price Predictor</a> 
+                                    
+                                    
+                                </nav>
+                                </div>   
+                
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseData" aria-expanded="false" aria-controls="collapseData">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Data
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a>
+                                    <div class="collapse" id="collapseData" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Data_1.html">Property Data Tables</a>
+                                </nav> 
+                            </div>
+                        
+                            <div class="sb-sidenav-menu-heading">Portfolio</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePortfolio" aria-expanded="false" aria-controls="collapsePortfolio">
+                                <div class="sb-nav-link-icon"><i class="icon"></i></div> 
+                                Git Hub Portfolio
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a>
+                                <div class="collapse" id="collapsePortfolio" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="https://github.com/salehakhatun/Final-Project">Final Project</a>
+                                <a class="nav-link" href="https://github.com/hatimmansor">Hatim Mansor</a>
+                                <a class="nav-link" href="https://github.com/john">John N</a>
+                                <a class="nav-link" href="https://github.com/salehakhatun/Final-Project">Saleha Khatun</a>
+                                <a class="nav-link" href="https://https://github.com/Jasjeet2021">Jasjeet Kaur</a>
+                                <a class="nav-link" href="https://github.com/KaumudiMendis">K Mendis</a>
+                                <a class="nav-link" href="https://github.com/salehakhatun/Final-Project">Phimnarin Aksupak</a>
+                                
+
+
+
+
+
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="sb-sidenav-footer ">
+                        <blockquote class="blockquote">
+                          <p>”In God we trust. All others must bring data”</p>
+                          <footer class="blockquote-footer">W. Edwards Deming</footer>
+                        </blockquote>
+                      </div>
+                   
+                </nav>
+            </div>
+        
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                         <div class="card mb-4">
+                        </div>
+                        <div class="row">
+                                <div class="col-lg-8"> 
+                                    <h1 class="mt-8">Victoria Property Analysis:</h1>
+                                 
+                                 <div class="square">
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <h2>Matplotlib</h2>
+                                <div> 
+                                
+                          
+                                </div>
+                                 <p align="left">
+                                    Melbourne's property price growth slowed down a little lately with more properties 
+                                    listed for sale over the last couple of months, but it's important to remember that 
+                                    buyers are sellers and sellers are buyers – meaning they will have to live somewhere 
+                                    and many will be looking to upgrade their accommodation in 2022.Now that Melbourne is 
+                                    out of the longest lockdowns experienced anywhere, the pent-up demand at a time of 
+                                    increasing consumer confidence, an improving economy,and abundant job creation ensures continued 
+                                    strong Melbourne house price growth in 2022.
+
+
+                                
+                                    <div class="card mb-4">
+                                    <blockquote class="blockquote">
+                                        <p align="left">"From the chart we can see the most sale property type catagoty was House then Townhouse 
+                                            followd by Unit and Villa.Also demand depends on numbers if bed rooms bath rooms and carport."</p> 
+                                        <footer class="blockquote-footer"><a href="https://www.domain.com.au/">Domain:Realstate </a></footer></blockquote>
+                                        
+                                   
+                                 </p>
+                                 
+                                </div>
+                                <img src="../static/Images/fig1.png" alt="Number of Bedrooms" width="50%" align="left" />
+                                <img src="../static/Images/fig2.png"  alt="Number of Bathrooms" width="50%" align="left" />
+								<img src="../static/Images/fig5.png"  alt="Property Type" width="100%" align="center" />
+								
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-12"> 
+                                <h1 class="mt-8">Melbourne</h1>
+                                <div class="card mb-4">
+                                <div class="card-header">
+                                    <div class="box">
+                                    <div class="container">  
+                                        <div class="row">
+                                            
+                                              <img src="{{ url_for('static', filename='assets/demo/melbourne.webp') }}" href="Plot_1.html" alt="Snow" style="width:100%">
+                                               
+                                            <p>
+												The <strong>City of Melbourne</strong> is a local government area in <b>Victoria</b>, Australia, 
+												located in the central city area of Melbourne. In 2018 the city has an area 
+												of 37 square kilometres (14 sq mi) and had a population of 169,961. 
+												The city's motto is "Vires acquirit eundo" which means "She gathers strength as she goes."
+											</p>
+                                          
+                                        </div>  
+                                </div>     
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            </main>               
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                           
+                            <a href="#"></a>
+                                &middot;
+                                <a href="#"></a>
+                            <div class="text-muted">Copyright &copy;   Victoria Housing Price Prediction: Dolphin Smart Group  (2022)</div>
+                        </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+      
+    
+    </body>
+</html>

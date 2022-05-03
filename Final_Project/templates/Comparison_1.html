@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Vic Property Analysis  - Landing Page</title>
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet" /> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3"  href="/">Vic Property Analysis <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggles" viewBox="0 0 16 16">
+                <path d="M4.5 9a3.5 3.5 0 1 0 0 7h7a3.5 3.5 0 1 0 0-7h-7zm7 6a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm-7-14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm2.45 0A3.49 3.49 0 0 1 8 3.5 3.49 3.49 0 0 1 6.95 6h4.55a2.5 2.5 0 0 0 0-5H6.95zM4.5 0h7a3.5 3.5 0 1 1 0 7h-7a3.5 3.5 0 1 1 0-7z"/>
+              </svg></a>
+            
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                   
+
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Data & Analysis</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePlots" aria-expanded="false" aria-controls="collapsePlots">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>   
+                            Plots 
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a>
+                            <div class="collapse" id="collapsePlots" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="/">Matplotlib</a>    
+                                    <a class="nav-link" href="Plot_3.html">Property Dashboard</a>
+                                </nav>
+                                </div>
+
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseComparison" aria-expanded="false" aria-controls="collapseComparison">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-eye"></i></div>   
+                                    Property prediction
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a>
+                                    <div class="collapse" id="collapseComparison" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="Comparison_1.html">Vic Housing Price Predictor</a> 
+                                </nav>
+                                </div>   
+                
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseData" aria-expanded="false" aria-controls="collapseData">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Data
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a>
+                                    <div class="collapse" id="collapseData" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Data_1.html">Property Data Tables</a>
+                                </nav> 
+                            </div>
+                        
+                            <div class="sb-sidenav-menu-heading">Portfolio</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePortfolio" aria-expanded="false" aria-controls="collapsePortfolio">
+                                <div class="sb-nav-link-icon"><i class="icon"></i></div> 
+                                Git Hub Portfolio
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a>
+                                <div class="collapse" id="collapsePortfolio" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="https://github.com/salehakhatun/Final-Project">Final Project</a>
+                                        <a class="nav-link" href="https://github.com/hatimmansor">Hatim Mansor</a>
+                                        <a class="nav-link" href="https://github.com/john">John N</a>
+                                        <a class="nav-link" href="https://github.com/salehakhatun/Final-Project">Saleha Khatun</a>
+                                        <a class="nav-link" href="https://https://github.com/Jasjeet2021">Jasjeet Kaur</a>
+                                        <a class="nav-link" href="https://github.com/KaumudiMendis">K Mendis</a>
+                                        <a class="nav-link" href="https://github.com/salehakhatun/Final-Project">Phimnarin Aksupak</a>                                
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="sb-sidenav-footer ">
+                        <blockquote class="blockquote">
+                          <p>”In God we trust. All others must bring data”</p>
+                          <footer class="blockquote-footer">W. Edwards Deming</footer>
+                        </blockquote>
+                      </div>
+                   
+                </nav>
+            </div>
+        
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                         <div class="card mb-4">
+                        </div>
+                        <div class="row">
+                                <div class="col-lg-12"> 
+                                    <h1 class="mt-8">Victoria Property Analysis:</h1>
+                                  
+                                 <div class="square">
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <h2>Input values:</h2>
+                                <div> 
+                                    <form action="{{ url_for('Machine') }}" method="POST">
+                                        <fieldset>
+                                            <div class="autocomplete" style="width:300px;">
+                                                Home Address:
+                                                <input id="myInput" type="text" name="myCountry" placeholder="Home Address">
+                                              </div>
+                                              <!-- <script>
+                                              autocomplete(document.getElementById("myInput"), '{{countries1}}');
+                                            </script> -->
+                                            
+                                            
+                                            PostCode:
+                                            <input name="Postcode" id="PostcodeID" onfocusout="mypostcode()" type="number" placeholder="Post Code" required>
+                                            Median Price:
+                                            <input name="medianprice" type="text"  id="Medianprice" style="width: 200px;" placeholder="Suburb Median Price" required>
+                                            <br>
+                                            <br> Bedrooms:
+                                            <input name="Bedrooms" type="number" placeholder="Number of Bedrooms" required>
+                                             Bath Rooms:
+                                            <input name="Bathroom" type="number" placeholder="Number of Bath Rooms" required>
+                                             Car port:
+                                            <input name="Carport" type="number" placeholder="Number of Car port" required>
+                                             Land Size:
+                                            <input name="LandSize" type="number" placeholder="Land Area in sqm"required>
+                                            <br>
+                                            URL link:
+                                            <a href="Domain.com" title="this link" id="URL">Domain.com</a>
+                                            <br>
+                                            <input type="submit">
+                                            <input type="reset">
+                                        </fieldset>
+
+                                        
+                                        <div class="result" align="center">
+                                        <p style="font-size:50px">{{ result }}</p>
+                                        </div>
+
+                                        
+                                    </form>
+                                    <script>
+                                        function mypostcode() {
+                                            var x = document.getElementById("myInput").value;
+                                            found = address.findIndex(element => element == x);
+                                            
+
+                                            document.getElementById("PostcodeID").value=postcode[found];
+                                            var formatter = new Intl.NumberFormat('en-US', {
+                                            style: 'currency',
+                                            currency: 'USD',
+
+                                            // These options are needed to round to whole numbers if that's what you want.
+                                            //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
+                                            //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
+                                            });
+
+
+                                            document.getElementById("Medianprice").value=formatter.format(parseInt(medianprice[found]));
+                                            var a = document.querySelector('a[href="Domain.com"]');
+                                            if (a) {
+                                            a.setAttribute('href', urls[found])
+                                            
+                                            }
+                                            document.getElementById("URL").innerHTML=urls[found];
+                                            
+                                        }
+                                        function autocomplete(inp, arr) {
+                                          /*the autocomplete function takes two arguments,
+                                          the text field element and an array of possible autocompleted values:*/
+                                          var currentFocus;
+                                          /*execute a function when someone writes in the text field:*/
+                                          inp.addEventListener("input", function(e) {
+                                              var a, b, i, val = this.value;
+                                              /*close any already open lists of autocompleted values*/
+                                              closeAllLists();
+                                              if (!val) { return false;}
+                                              currentFocus = -1;
+                                              /*create a DIV element that will contain the items (values):*/
+                                              a = document.createElement("DIV");
+                                              a.setAttribute("id", this.id + "autocomplete-list");
+                                              a.setAttribute("class", "autocomplete-items");
+                                              /*append the DIV element as a child of the autocomplete container:*/
+                                              this.parentNode.appendChild(a);
+                                              /*for each item in the array...*/
+                                              for (i = 0; i < arr.length; i++) {
+                                                /*check if the item starts with the same letters as the text field value:*/
+                                                if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                                                  /*create a DIV element for each matching element:*/
+                                                  b = document.createElement("DIV");
+                                                  /*make the matching letters bold:*/
+                                                  b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                                                  b.innerHTML += arr[i].substr(val.length);
+                                                  /*insert a input field that will hold the current array item's value:*/
+                                                  b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                                                  /*execute a function when someone clicks on the item value (DIV element):*/
+                                                  b.addEventListener("click", function(e) {
+                                                      /*insert the value for the autocomplete text field:*/
+                                                      inp.value = this.getElementsByTagName("input")[0].value;
+                                                      /*close the list of autocompleted values,
+                                                      (or any other open lists of autocompleted values:*/
+                                                      closeAllLists();
+                                                  });
+                                                  a.appendChild(b);
+                                                }
+                                              }
+                                          });
+                                          /*execute a function presses a key on the keyboard:*/
+                                          inp.addEventListener("keydown", function(e) {
+                                              var x = document.getElementById(this.id + "autocomplete-list");
+                                              if (x) x = x.getElementsByTagName("div");
+                                              if (e.keyCode == 40) {
+                                                /*If the arrow DOWN key is pressed,
+                                                increase the currentFocus variable:*/
+                                                currentFocus++;
+                                                /*and and make the current item more visible:*/
+                                                addActive(x);
+                                              } else if (e.keyCode == 38) { //up
+                                                /*If the arrow UP key is pressed,
+                                                decrease the currentFocus variable:*/
+                                                currentFocus--;
+                                                /*and and make the current item more visible:*/
+                                                addActive(x);
+                                              } else if (e.keyCode == 13) {
+                                                /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                                                e.preventDefault();
+                                                if (currentFocus > -1) {
+                                                  /*and simulate a click on the "active" item:*/
+                                                  if (x) x[currentFocus].click();
+                                                }
+                                              }
+                                          });
+                                          function addActive(x) {
+                                            /*a function to classify an item as "active":*/
+                                            if (!x) return false;
+                                            /*start by removing the "active" class on all items:*/
+                                            removeActive(x);
+                                            if (currentFocus >= x.length) currentFocus = 0;
+                                            if (currentFocus < 0) currentFocus = (x.length - 1);
+                                            /*add class "autocomplete-active":*/
+                                            x[currentFocus].classList.add("autocomplete-active");
+                                          }
+                                          function removeActive(x) {
+                                            /*a function to remove the "active" class from all autocomplete items:*/
+                                            for (var i = 0; i < x.length; i++) {
+                                              x[i].classList.remove("autocomplete-active");
+                                            }
+                                          }
+                                          function closeAllLists(elmnt) {
+                                            /*close all autocomplete lists in the document,
+                                            except the one passed as an argument:*/
+                                            var x = document.getElementsByClassName("autocomplete-items");
+                                            for (var i = 0; i < x.length; i++) {
+                                              if (elmnt != x[i] && elmnt != inp) {
+                                                x[i].parentNode.removeChild(x[i]);
+                                              }
+                                            }
+                                          }
+                                          /*execute a function when someone clicks in the document:*/
+                                          document.addEventListener("click", function (e) {
+                                              closeAllLists(e.target);
+                                          });
+                                        }
+                                        
+                                        /*An array containing all the country names in the world:*/
+                                        var temp='{{countries1 | tojson }}';
+                                         temp=temp.replaceAll(' \"#','');
+                                         temp=temp.replaceAll('#\"','');
+                                         temp=temp.replaceAll('"','');
+                                         temp=temp.replaceAll('.0','');
+                                        // temp=temp.replaceAll(' ','');
+                                        temp=temp.replaceAll('[','');
+                                        temp=temp.replaceAll(']','');
+                                        
+
+                                        
+                                        domain=temp.split(',');
+                                        var address=[];
+                                        var domain_id=[];
+                                        var postcode=[];
+                                        var medianprice=[];
+                                        var urls=[];
+                                        
+
+                                        for (const element of domain) {
+                                            
+                                            temp=element.split('!');
+                                            
+                                            address.push(temp[0]);
+                                            temp2=temp[1].split('@');
+                                            domain_id.push(temp2[0]);
+                                            temp3=temp2[1].split('$');
+                                            postcode.push(temp3[0]);
+                                            temp4=temp3[1].split('&');
+                                            urls.push(temp4[0]);
+                                            medianprice.push(temp4[1]);
+
+
+
+                                            
+                                                }
+                                       
+                                            console.log(domain_id,postcode,urls,medianprice);
+                                            
+                                        var countries =address
+                                        
+                                        //  ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua & Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central Arfrican Republic","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauro","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre & Miquelon","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","St Kitts & Nevis","St Lucia","St Vincent","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Turks & Caicos","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+                                        
+                                        /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+                                        autocomplete(document.getElementById("myInput"), countries);
+                                        </script>
+                              
+                                </div>
+                                 <p align="right">
+                               
+
+                               
+                                 </p>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                            
+                           
+            </div>
+            </main>               
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                           
+                            <a href="#"></a>
+                                &middot;
+                                <a href="#"></a>
+                            <div class="text-muted">Copyright &copy;   Victoria Housing Price Prediction: Dolphin Smart Group  (2022)</div>
+                        </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+      
+    
+    </body>
+</html>

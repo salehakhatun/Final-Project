@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>JN Web Challenge - Landing Page</title>
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+    <script>
+        function toggle() {
+            var x1 = document.getElementById("dashboard1");
+            var x2 = document.getElementById("dashboard2");
+            var bl = document.getElementById("button1");
+
+            if (x1.style.display === "none") {
+                x1.style.display = "block";
+                x2.style.display = "none";
+                bl.firstChild.data = "To Data B";
+            } else {
+                x1.style.display = "none";
+                x2.style.display = "block";
+                bl.firstChild.data = "To Data A";
+            }
+        }
+
+        function initialize() {
+
+
+            var containerDiv1 = document.getElementById("dashboard1"),
+                url1 = "https://public.tableau.com/views/FinalProjecttalala_xls_16509716786080/Story2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+                options1 = {
+                    hideTabs: true,
+                    onFirstInteractive: function () {
+                        console.log("Run this code when the viz has finished loading.");
+                    }
+                };
+
+            var viz1 = new tableau.Viz(containerDiv1, url1, options1);
+            // Create a viz object and embed it in the container div.
+
+
+            var containerDiv2 = document.getElementById("dashboard2"),
+                url2 = "https://public.tableau.com/shared/75TSN5KM6?:display_count=n&:origin=viz_share_link",
+                options2 = {
+                    hideTabs: true,
+                    onFirstInteractive: function () {
+                        console.log("Run this code when the viz has finished loading.");
+                    }
+                };
+
+            var viz2 = new tableau.Viz(containerDiv2, url2, options2);
+        }
+
+    </script>
+
+
+
+    <style>
+        #dashboard1 {
+            border: 1px solid green;
+            width: 800px;
+            height: 400px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #dashboard2 {
+            border: 1px solid blue;
+            width: 800px;
+            height: 400px;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body onload="initialize()">
+
+    <body class="sb-nav-fixed">
+
+
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                    class="fas fa-bars"></i></button>
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="/">Vic Property Analysis <svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggles"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.5 9a3.5 3.5 0 1 0 0 7h7a3.5 3.5 0 1 0 0-7h-7zm7 6a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm-7-14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm2.45 0A3.49 3.49 0 0 1 8 3.5 3.49 3.49 0 0 1 6.95 6h4.55a2.5 2.5 0 0 0 0-5H6.95zM4.5 0h7a3.5 3.5 0 1 1 0 7h-7a3.5 3.5 0 1 1 0-7z" />
+                </svg></a>
+
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+
+
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Data & Analysis</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePlots" aria-expanded="false" aria-controls="collapsePlots">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Plots
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePlots" aria-labelledby="headingOne"
+                                data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="/">Matplotlib</a>
+                                    <a class="nav-link" href="Plot_3.html">Property Dashboard</a>
+
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                data-bs-target="#collapseComparison" aria-expanded="false"
+                                aria-controls="collapseComparison">
+                                <div class="sb-nav-link-icon"><i class="fas fa-eye"></i></div>
+                                Property predicting
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseComparison" aria-labelledby="headingTwo"
+                                data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="Comparison_1.html">Vic Predict House </a>
+                                 
+
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                data-bs-target="#collapseData" aria-expanded="false" aria-controls="collapseData">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Data
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseData" aria-labelledby="headingTwo"
+                                data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="Data_1.html">Data Tables</a>
+                                </nav>
+                            </div>
+
+                            <div class="sb-sidenav-menu-heading">Portfolio</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePortfolio" aria-expanded="false"
+                                aria-controls="collapsePortfolio">
+                                <div class="sb-nav-link-icon"><i class="icon"></i></div>
+                                Git Hub Portfolio
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePortfolio" aria-labelledby="headingOne"
+                                data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="https://github.com/salehakhatun/Final-Project">Final
+                                        Project</a>
+                                    <a class="nav-link" href="https://github.com/hatimmansor">Hatim Mansor</a>
+                                    <a class="nav-link" href="https://github.com/john">John N</a>
+                                    <a class="nav-link" href="https://github.com/salehakhatun/Final-Project">Saleha
+                                        Khatun</a>
+                                    <a class="nav-link" href="https://https://github.com/Jasjeet2021">Jasjeet Kaur</a>
+                                    <a class="nav-link" href="https://github.com/KaumudiMendis">K Mendis</a>
+                                    <a class="nav-link" href="https://github.com/salehakhatun/Final-Project">Phimnarin
+                                        Aksupak</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="sb-sidenav-footer ">
+                        <blockquote class="blockquote">
+                            <p>”In God we trust. All others must bring data”</p>
+                            <footer class="blockquote-footer">W. Edwards Deming</footer>
+                        </blockquote>
+                    </div>
+
+                </nav>
+            </div>
+
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-12">
+                        <div class="card mb-12">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h1 class="mt-12">Tableau Analysis:</h1>
+
+                                <div class="square">
+                                    <div class="card mb-12">
+                                        <div class="card-header">
+                                            <h2>Interactive Property Map</h2>
+                                            <div>
+
+
+                                            </div>
+                                            <p align="left">
+                                                Understanding how a suburb fares compared to it's surroundings is an
+                                                important factor to take in to account when purchasing a property.
+                                            </p>
+                                            <p align="left">
+                                                With the map below navigate the suburbs of Victoria and discover key
+                                                drivers in
+                                                price differences amongst them.
+
+                                            </p>
+                                            <p align="left">
+                                                See the breakdown in property type, price range rank and number of sale
+                                                types.
+
+                                            </p>
+
+                                        </div>
+
+                                        <div class='tableauPlaceholder' id='viz1651284851844' height="500px"
+                                            style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 '
+                                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectDashboard_16512848325130&#47;Dashboard1&#47;1_rss.png'
+                                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                                style='display:none;'>
+                                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                                <param name='embed_code_version' value='3' />
+                                                <param name='site_root' value='' />
+                                                <param name='name'
+                                                    value='FinalProjectDashboard_16512848325130&#47;Dashboard1' />
+                                                <param name='tabs' value='no' />
+                                                <param name='toolbar' value='yes' />
+                                                <param name='static_image'
+                                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectDashboard_16512848325130&#47;Dashboard1&#47;1.png' />
+                                                <param name='animate_transition' value='yes' />
+                                                <param name='display_static_image' value='yes' />
+                                                <param name='display_spinner' value='yes' />
+                                                <param name='display_overlay' value='yes' />
+                                                <param name='display_count' value='yes' />
+                                                <param name='language' value='en-US' />
+                                                <param name='filter' value='publish=yes' />
+                                            </object></div>
+                                        <script
+                                            type='text/javascript'>                    var divElement = document.getElementById('viz1651284851844'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '1500px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '1500px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1027px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                        <div class="square">
+                                            <div class="card mb-4">
+                                                <div class="card-header">
+                                                    <h2>Property Charts</h2>
+                                                    <div>
+                                                        <p align="left">
+                                                            Below are the 3 Top and Bottom performers for median sold
+                                                            price of the current listings.
+                                                        </p>
+
+                                                        <div class='tableauPlaceholder' id='viz1651455724739'
+                                                            style='position: relative'><noscript><a href='#'><img
+                                                                        alt='Dashboard 2 '
+                                                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectDashboard2_16514557057660&#47;Dashboard2&#47;1_rss.png'
+                                                                        style='border: none' /></a></noscript><object
+                                                                class='tableauViz' style='display:none;'>
+                                                                <param name='host_url'
+                                                                    value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                                                <param name='embed_code_version' value='3' />
+                                                                <param name='site_root' value='' />
+                                                                <param name='name'
+                                                                    value='FinalProjectDashboard2_16514557057660&#47;Dashboard2' />
+                                                                <param name='tabs' value='no' />
+                                                                <param name='toolbar' value='yes' />
+                                                                <param name='static_image'
+                                                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectDashboard2_16514557057660&#47;Dashboard2&#47;1.png' />
+                                                                <param name='animate_transition' value='yes' />
+                                                                <param name='display_static_image' value='yes' />
+                                                                <param name='display_spinner' value='yes' />
+                                                                <param name='display_overlay' value='yes' />
+                                                                <param name='display_count' value='yes' />
+                                                                <param name='language' value='en-US' />
+                                                                <param name='filter' value='publish=yes' />
+                                                            </object></div>
+                                                        <script
+                                                            type='text/javascript'>                    var divElement = document.getElementById('viz1651455724739'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+        </main>
+        <footer class="py-4 bg-dark mt-auto">
+            <div class="container-fluid px-4">
+                <div class="d-flex align-items-center justify-content-between small">
+
+                    <a href="#"></a>
+                    &middot;
+                    <a href="#"></a>
+                    <div class="text-muted">Copyright &copy; Web Design Challenge JN (2022)</div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        </div>
+        </div>
+
+
+
+    </body>
+
+</html>
