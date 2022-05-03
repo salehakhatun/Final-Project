@@ -16,7 +16,7 @@ LGA locality data from https://discover.data.vic.gov.au/dataset/victorian-electo
 - [Melbourne Housing Market](https://www.domain.com.au/)
 
 <a name="tech"></a>
-## Technologies: 
+## Technologies/Tools: 
 - Jupyter Notebook
 - Python
 - Numpy
@@ -36,13 +36,14 @@ LGA locality data from https://discover.data.vic.gov.au/dataset/victorian-electo
 01. Identify data source
 02. Collect and clean Melbourne housing data
 03. Normalized target feature for better model results
-04. Create charts and graphs using Matplot/Tableau
+04. Create charts and graphs using Matplot
 05. Load data into PostgreSQL
 06. Transform data to be fitted into models
 07. Test varying machine learning models and determine best option
 08. Customize HTML and CSS for final application
 09. Develope Flask application for model deployment
-10. Visualize dashboard in Tableau/Matplotlib
+10. Visualize dashboard in Tableau
+11. deploy locally
 
 
 <a name="Team-Dolphin Smart"></a>
