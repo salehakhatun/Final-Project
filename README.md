@@ -48,7 +48,7 @@ LGA locality data from https://discover.data.vic.gov.au/dataset/victorian-electo
 <a name="Team-Dolphin Smart"></a>
 ## 
 01. Hatim M
-02.John N
+02. John N
 03. Jasjeet K
 04. Saleha K
 05. Kumudi M
