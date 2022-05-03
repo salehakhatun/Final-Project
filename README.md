@@ -36,7 +36,7 @@ LGA locality data from https://discover.data.vic.gov.au/dataset/victorian-electo
 01. Identify data source
 02. Collect and clean Melbourne housing data
 03. Normalized target feature for better model results
-04. Create charts and graphs using Matplot
+04. Create charts and graphs using Matplotlib
 05. Load data into PostgreSQL
 06. Transform data to be fitted into models
 07. Test varying machine learning models and determine best option
