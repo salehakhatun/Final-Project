@@ -1,7 +1,7 @@
 # Housing Price Prediction
 [Melbourne, Australia Housing Price Prediction](https://github.com/salehakhatun/Final-Project/)
 
-![Houses Picture](images/melbourne_houses.jpg)
+![Houses Picture](image/melbourne_houses.jpg)
 
 ## Table of Contents: :house_with_garden:
 01. [Reason For Our Project]
